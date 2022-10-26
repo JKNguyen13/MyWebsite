@@ -15,6 +15,7 @@ background: linear-gradient(to left, white, cyan);
 .calculator-grid{
     display: grid;
     margin: 2rem;
+    justify-content: center;
     grid-template-rows: repeat(4, 6rem);
     grid-template-columns: minmax(7rem, auto) repeat(5, 6rem);
 }
@@ -28,7 +29,7 @@ background: linear-gradient(to left, white, cyan);
 }
 
 .calculator-grid > button:hover, .calculator-grid > button:focus{
-    background-color: red;
+    background-color: white;
 }
 
 .span-two {
@@ -54,5 +55,35 @@ background: linear-gradient(to left, white, cyan);
 
 .output .current-operand{
     color: white;
+    font-size: 2.5rem;
+}
+
+.box{
+    justify-content: center;
+    display: flex;
+    width: 20rem;
+    height: 400px;
+    margin: 0;
+    padding: 1rem;
+    background-color: white;
+}
+
+.box2{
+    justify-content: center;
+    display: flex;
+    width: 20rem;
+    height: 400px;
+    margin: 0;
+    padding: 1rem;
+    background-color: black;
+}
+
+.box .first{
+    color: cyan;
+    font-size: 2.5rem;
+}
+
+.box2 .second{
+    color: cyan;
     font-size: 2.5rem;
 }
