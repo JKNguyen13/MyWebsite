@@ -64,41 +64,48 @@ function App() {
           <button className="span-two">=</button>
 
         </div>
-
-        <div class="box">
+        
+        <div class="reminders">
           <div className="first" contenteditable="false">REMINDERS:</div>
-           <div className="box2">
+          </div>
+          <div className="goals">
+          <div className="firstG" contenteditable="false">GOALS:</div>
+        </div>
+        <div className="custom">
+          <div className="firstC" contenteditable="true">CUSTOM:</div>
+        </div>
+          <div className="reminders-box">
             <div className="second" contenteditable="true">
               <li >Take out trash</li>
               <li >Take out trash</li>
               <li >Take out trash</li>
             </div>
           </div>
+        <div className="goals-box">
+            <div className="secondG" contenteditable="true">
+              <li >Take out trash</li>
+              <li >Take out trash</li>
+              <li >Take out trash</li>
+            </div>
           </div>
-          
-
-        <div id="text-box" contenteditable="false">
-          <style scoped>
-
-
-          </style>
-          <p>REMINDERS:</p>
-        </div>
-
-        <ul>
-          <div id="first-section" contenteditable="true">
-            <li id="save">
-            Wash clothes
-            </li>
+          <div className="custom-box">
+            <div className="secondC" contenteditable="true">
+              <li ></li>
+              <li ></li>
+              <li ></li>
+            </div>
           </div>
 
-          <li id="second-section" contenteditable="true">Take out trash</li>
-          <li id="third-section" contenteditable="true">Wash the dishes</li>
-          <li id="fourth-section" contenteditable="true">Buy groceries</li>
-        </ul>
-
+         
       </header>
     </div>
+  );
+}
+
+function listBoxes(){
+  return(
+    <div>yes</div>
+    
   );
 }
 

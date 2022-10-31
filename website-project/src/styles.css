@@ -58,32 +58,115 @@ background: linear-gradient(to left, white, cyan);
     font-size: 2.5rem;
 }
 
-.box{
+.reminders{
     justify-content: center;
     display: flex;
     width: 20rem;
-    height: 400px;
+    height: 80px;
     margin: 0;
     padding: 1rem;
     background-color: white;
+    border-radius: 3rem;
+    float: left;
+    
 }
 
-.box2{
-    justify-content: center;
+.reminders-box{
+    justify-content: left;
     display: flex;
     width: 20rem;
     height: 400px;
+    border: solid;
+    border-width: .5rem;
+    border-color: white;
+    border-radius: 1rem;
     margin: 0;
     padding: 1rem;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.876);
+    float: left;
+    
 }
 
-.box .first{
+.reminders .first{
     color: cyan;
     font-size: 2.5rem;
 }
 
-.box2 .second{
+.reminders-box .second{
+    color: cyan;
+    font-size: 2.5rem;
+    
+}
+.goals{
+    justify-content: center;
+    display: flex;
+    width: 20rem;
+    height: 80px;
+    margin: 0;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 3rem;
+    float: left;
+    
+}
+
+.goals-box{
+    justify-content: left;
+    display: flex;
+    width: 20rem;
+    height: 400px;
+    border: solid;
+    border-width: .5rem;
+    border-color: white;
+    border-radius: 1rem;
+    margin: 0;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.876);
+    float: left;
+}
+
+.goals .firstG{
+    color: cyan;
+    font-size: 2.5rem;
+}
+
+.goals-box .secondG{
+    color: cyan;
+    font-size: 2.5rem;
+}
+.custom{
+    justify-content: center;
+    display: flex;
+    width: 20rem;
+    height: 80px;
+    margin: 0;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 3rem;
+    
+    
+}
+
+.custom-box{
+    justify-content: left;
+    display: flex;
+    width: 20rem;
+    height: 400px;
+    border: solid;
+    border-width: .5rem;
+    border-color: white;
+    border-radius: 1rem;
+    margin: 0;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.876);
+}
+
+.custom .firstC{
+    color: cyan;
+    font-size: 2.5rem;
+}
+
+.custom-box .secondC{
     color: cyan;
     font-size: 2.5rem;
 }
