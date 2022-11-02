@@ -65,38 +65,20 @@ function App() {
 
         </div>
         
-        <div class="reminders">
-          <div className="first" contenteditable="false">REMINDERS:</div>
-          </div>
-          <div className="goals">
-          <div className="firstG" contenteditable="false">GOALS:</div>
-        </div>
-        <div className="custom">
-          <div className="firstC" contenteditable="true">CUSTOM:</div>
-        </div>
-          <div className="reminders-box">
-            <div className="second" contenteditable="true">
-              <li >Take out trash</li>
-              <li >Take out trash</li>
-              <li >Take out trash</li>
-            </div>
-          </div>
-        <div className="goals-box">
-            <div className="secondG" contenteditable="true">
-              <li >Take out trash</li>
-              <li >Take out trash</li>
-              <li >Take out trash</li>
-            </div>
-          </div>
-          <div className="custom-box">
-            <div className="secondC" contenteditable="true">
-              <li ></li>
-              <li ></li>
-              <li ></li>
-            </div>
-          </div>
+        <div class="reminders">REMINDERS:</div>
+        <div className="goals">GOALS:</div>
+        <div className="custom" contenteditable="true">CUSTOM:</div>
+          
+        <textarea className="reminders-box"></textarea> 
+        <textarea className="goals-box"></textarea>
+        <textarea className="custom-box"></textarea>
+          
+        <div className="clock">12:00</div>
+        <div className="timeOfDay">PM</div>
 
-         
+        <div className="weather"></div>
+        <div className="weatherClick">aa</div>
+        
       </header>
     </div>
   );
