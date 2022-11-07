@@ -1,0 +1,11 @@
+.Clock{
+    justify-content: center;
+    font-size:10em;
+    display: flex;
+}
+
+.Date{
+    justify-content: center;
+    font-size:10rem;
+    display: flex;
+}

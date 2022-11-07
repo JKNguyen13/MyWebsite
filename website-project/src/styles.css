@@ -60,7 +60,7 @@ background: linear-gradient(to left, white, cyan);
 
 .reminders{
     justify-content: center;
-    display: flex;
+    display: flex; /*makes it screen adjustable*/
     width: 20rem;
     height: 80px;
     margin: 0;
@@ -155,14 +155,6 @@ background: linear-gradient(to left, white, cyan);
     resize: none;
 }
 
-.clock{
-    font-size:20rem;
-    float:left;
-}
-.timeOfDay{
-    font-size: 7.5rem;
-}
-
 .weather{
     display: flex;
     justify-content: center;
@@ -180,8 +172,16 @@ background: linear-gradient(to left, white, cyan);
 
 .weatherClick{
     justify-content: center;
+    display: flex;
     width:5rem;
     height:20rem;
     background-color: white;
-    float:left;
+    
+}
+
+.weatherClick .text{
+    justify-content: center;
+    display:flex;
+    padding:8rem;
+    font-size: 2rem;
 }

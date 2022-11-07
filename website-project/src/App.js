@@ -2,6 +2,8 @@ import logo from './logo.svg';
 //import './App.css';
 import { useReducer } from "react"
 import './styles.css';
+import Clock from "./components/Clock"
+
 
 const ACTIONS = {
   ADD_DIGIT: 'add-digit',
@@ -27,6 +29,7 @@ function App() {
 
     
     <div className="App">
+      
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         
@@ -39,6 +42,7 @@ function App() {
           Learn React
         </a>
 
+        
         <div className="calculator-grid">
           <div className="output">
             <div className="previous-operand">{previousOperand} {operation} </div>
@@ -64,7 +68,8 @@ function App() {
           <button className="span-two">=</button>
 
         </div>
-        
+       
+
         <div class="reminders">REMINDERS:</div>
         <div className="goals">GOALS:</div>
         <div className="custom" contenteditable="true">CUSTOM:</div>
@@ -73,11 +78,11 @@ function App() {
         <textarea className="goals-box"></textarea>
         <textarea className="custom-box"></textarea>
           
-        <div className="clock">12:00</div>
-        <div className="timeOfDay">PM</div>
+       <Clock></Clock>
 
         <div className="weather"></div>
-        <div className="weatherClick">aa</div>
+        <div className="weatherClick">
+          <div className="text">arrow</div></div>
         
       </header>
     </div>
