@@ -13,6 +13,11 @@ const ACTIONS = {
   EVALUATE: 'evaluate'
 }
 
+const ail = "yo"
+const lins = ""
+if({ail} = "Youtube"){
+  lins = "https://youtube.com"
+}
 function reducer(state, {type, payload}){
   switch(type){
     case ACTIONS.ADD_DIGIT:
@@ -42,6 +47,19 @@ function App() {
           Learn React
         </a>
 
+        <a
+          className="Yay"
+          href= {lins}
+          target="_blank"
+          rel="noopener noreferrer"
+          ail = "sdasdasd"
+          
+        >
+          <text contentEditable>
+            {ail}
+            </text>
+            
+        </a>
         
         <div className="calculator-grid">
           <div className="output">
@@ -80,19 +98,19 @@ function App() {
           
        <Clock></Clock>
 
-        <div className="weather"></div>
+        <div className="weather">
+          <img src="https://cdn-icons-png.flaticon.com/512/1555/1555512.png" className="weatherIcon"></img>
+          <div className="text">
+              Sunday
+        
+          </div>
+        </div>
         <div className="weatherClick">
-          <div className="text">arrow</div></div>
+          <img src="https://www.transparentpng.com/thumb/arrow/right-black-arrow-icon-png-29.png"className="text"></img>
+        </div>
         
       </header>
     </div>
-  );
-}
-
-function listBoxes(){
-  return(
-    <div>yes</div>
-    
   );
 }
 

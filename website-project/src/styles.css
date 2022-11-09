@@ -182,6 +182,32 @@ background: linear-gradient(to left, white, cyan);
 .weatherClick .text{
     justify-content: center;
     display:flex;
-    padding:8rem;
+    position: relative; top: 8rem;
     font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+
+}
+
+.weather .weatherIcon{
+    justify-content: flex-start;
+    display:flex;
+    width: 3rem;
+    height: 3rem;
+    border: solid;
+    border-width: .2rem;
+    border-color: cyan;
+    border-radius: 2rem;
+    background-color: white;
+    position: relative; right:22rem; top: 4rem;
+}
+
+.weather .text{
+    justify-content: center;
+    display:flex;
+    
+    font-size: 1rem;
+    font-weight: bold;
+    color: cyan;
+    position: relative; right:25rem; top: 1.5rem;
 }
