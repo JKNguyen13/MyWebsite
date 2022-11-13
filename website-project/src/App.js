@@ -13,11 +13,6 @@ const ACTIONS = {
   EVALUATE: 'evaluate'
 }
 
-const ail = "yo"
-const lins = ""
-if({ail} = "Youtube"){
-  lins = "https://youtube.com"
-}
 function reducer(state, {type, payload}){
   switch(type){
     case ACTIONS.ADD_DIGIT:
@@ -45,20 +40,6 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
-
-        <a
-          className="Yay"
-          href= {lins}
-          target="_blank"
-          rel="noopener noreferrer"
-          ail = "sdasdasd"
-          
-        >
-          <text contentEditable>
-            {ail}
-            </text>
-            
         </a>
         
         <div className="calculator-grid">
