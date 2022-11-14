@@ -20,6 +20,9 @@ function reducer(state, {type, payload}){
   }
 }
 
+const yes = ["'Don't look back.'", "'You are not a mistake.'", "'You are amazing.'", "'All our dreams can come true, if we have the courage to pursue them.'"]
+const randNum = Math.floor(Math.random() * 4)
+
 function App() {
 
   const [{currentOperand, previousOperand, operation}, dispatch] = useReducer(reducer,{})
@@ -67,7 +70,10 @@ function App() {
           <button className="span-two">=</button>
 
         </div>
-       
+        
+        <div className = "quotesBox">
+        <div className = "quotes">{yes[randNum]}</div>
+        </div>
 
         <div class="reminders">REMINDERS:</div>
         <div className="goals">GOALS:</div>
