@@ -59,6 +59,53 @@ background: linear-gradient(to left, red, cyan);
     font-size: 2.5rem;
 }
 
+.calendar{
+    display: grid;
+    margin: 5rem;
+    justify-content: center;
+    grid-template-rows: repeat(6,3rem);
+    grid-template-columns: minmax(3rem, auto) repeat(6, 3rem);
+}
+
+.calendar > button{
+    cursor: pointer;
+    font-size: 1rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255,255,255,.75);
+}
+
+.calendar > button:hover, .calculator-grid > button:focus{
+    background-color: white;
+}
+
+.dates {
+    grid-column:  1 / -1;
+    background-color: rgba(0,0,0,.75);
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: .75rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#first{
+    color: darkgrey;
+}
+#second{
+    color: darkgrey;
+}
+#third{
+    color: darkgrey;
+}
+#fourth{
+    color: darkgrey;
+}
+
 .reminders{
     justify-content: center;
     display: flex; /*makes it screen adjustable*/
