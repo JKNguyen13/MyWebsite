@@ -9,7 +9,52 @@
 
 body {
 margin: 0;
-background: linear-gradient(to left, red, cyan);
+background: linear-gradient(to left, purple, cyan);
+}
+
+.welcomeText{
+    text-align: center;
+    font-size: 5vw;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 2rem;
+    color: white;
+    top: 50%;
+    left: 50%;
+}
+
+.followUpText{
+    text-align: center;
+    font-size: 3vw;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 2rem;
+    color: white;
+    top: 50%;
+    left: 50%;
+}
+
+.dailyRec{
+    position:relative;
+    top: 50%;    
+    left:0;
+    right:0;
+    margin:5rem auto;
+    width: 70%;
+    height: 10rem;
+    background-color: rgba(0,0,0,.75);
+    border: solid;
+    border-width: 1rem;
+    border-color: white;
+    border-radius: 3rem;
+}
+
+.dailyRec .text{
+    text-align: center;
+    font-size: 3vw;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 2rem;
+    color: white;
+    top: 50%;
+    left: 50%;
 }
 
 .calculator-grid{
@@ -120,6 +165,7 @@ background: linear-gradient(to left, red, cyan);
     float: left;
     color: cyan;
     font-size: 4vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .reminders-box{
@@ -156,6 +202,7 @@ background: linear-gradient(to left, red, cyan);
     float: left;
     color: cyan;
     font-size: 4vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .goals-box{
@@ -188,6 +235,7 @@ background: linear-gradient(to left, red, cyan);
     border-radius: 3rem;
     color: cyan;
     font-size: 4vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     resize: none;
 }
 
@@ -283,8 +331,10 @@ background: linear-gradient(to left, red, cyan);
 .quotesBox .quotes{
     text-align: center;
     font-size: 5vw;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 2rem;
     color: white;
     top: 50%;
     left: 50%;
 }
+

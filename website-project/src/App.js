@@ -20,6 +20,9 @@ function reducer(state, {type, payload}){
   }
 }
 
+const ownerName = ["Justin"]
+const dailyRecLink = ["https://www.youtube.com/watch?v=sBspSJWRT2E&ab_channel=QueenOfficial","https://www.youtube.com/watch?v=kTJczUoc26U&ab_channel=TheKidLAROIVEVO","https://www.youtube.com/watch?v=Tc0tLGWIqxA&ab_channel=PostMaloneVEVO","https://www.youtube.com/watch?v=Brm1ribq7WU&ab_channel=NIKI-Topic"]
+const randomGenre = [" Rock", " Pop", " Hip hop", " R&B"]
 const yes = ["'Don't look back.'", "'You are not a mistake.'", "'You are amazing.'", "'Follow your dreams'"]
 const randNum = Math.floor(Math.random() * 4)
 const texts = ["hi"]
@@ -37,15 +40,37 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className = "welcomeText">Welcome, {ownerName}!</div>
+        <div className="followUpText">What will we do today?</div>
+
+        <div class="reminders">REMINDERS:</div>
+        <div className="goals">GOALS:</div>
+        <div className="custom" contenteditable="true">CUSTOM:</div>
+          
+        <div className="reminders-box">
+          <input type="checkbox" className="testC"></input>
+          <label for="testC">
+            <textarea>hi</textarea>
+          </label>
+        </div> 
         
+        <textarea className="goals-box"></textarea>
+        <textarea className="custom-box"></textarea>
+        
+        <div className = "dailyRec">
+          <div className= "text">Today's Recommendation: 
+            <a
+            className=""
+            href={dailyRecLink[randNum]}
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+              {randomGenre[randNum]}
+            </a>
+          </div>
+
+        </div>
+
         <div className="calculator-grid">
           <div className="output">
             <div className="previous-operand">{previousOperand} {operation} </div>
@@ -115,20 +140,10 @@ function App() {
         <div className = "quotes">{yes[randNum]}</div>
         </div>
 
-        <div class="reminders">REMINDERS:</div>
-        <div className="goals">GOALS:</div>
-        <div className="custom" contenteditable="true">CUSTOM:</div>
+      
           
-        <div className="reminders-box">
-          <input type="checkbox" className="testC"></input>
-          <label for="testC">
-            <textarea>hi</textarea>
-          </label>
-        </div> 
-        
-        <textarea className="goals-box"></textarea>
-        <textarea className="custom-box"></textarea>
-          
+       
+
        <Clock></Clock>
 
         <div className="weather">
