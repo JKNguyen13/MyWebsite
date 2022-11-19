@@ -26,6 +26,8 @@ const randomGenre = [" Rock", " Pop", " Hip hop", " R&B"]
 const yes = ["'Don't look back.'", "'You are not a mistake.'", "'You are amazing.'", "'Follow your dreams'"]
 const randNum = Math.floor(Math.random() * 4)
 const texts = ["hi"]
+const specialDay = ["National Donut Day", "Valentine's Day", "National Bestfriend Day", "Christmas"]
+const dayDetails = ["Celebrated in the United States and in some other countries, National Donut Day is on the first Friday of June of each year, succeeding the doughnut event created by The Salvation Army in Chicago in 1938 to honor those of their members who served doughnuts to soldiers during World War I."]
 
 function App() {
 
@@ -38,7 +40,9 @@ function App() {
     <div className="App">
       
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <div className="NavBar">
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
         
         <div className = "welcomeText">Welcome, {ownerName}!</div>
         <div className="followUpText">What will we do today?</div>
@@ -134,6 +138,11 @@ function App() {
           <button>29</button>
           <button>30</button>
           <button>31</button>
+        </div>
+
+        <div className="todayIs">
+          <div className="text">Today is {specialDay[randNum]}!</div>
+          <div className="dayDetails">{dayDetails[randNum]}</div>
         </div>
 
         <div className = "quotesBox">

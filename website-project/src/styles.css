@@ -2,8 +2,20 @@
     box-sizing: border-box;
 }
 
+.NavBar{
+    justify-content: left; /* Put's everything that's in the div (the image) in the center of the parent*/
+    display: flex;
+    width:auto;
+    height: 6vw;
+    background-color: linear-gradient(to left, rgb(58, 1, 58), rgb(0, 45, 45));
+    border-top:solid;
+    border-top-color: white;
+    border-bottom:solid;
+    border-bottom-color: white;
+}
+
 .App-logo {
-    height: 10vmin;
+    height: 6vw;
     pointer-events: none;
   }
 
@@ -107,9 +119,11 @@ background: linear-gradient(to left, purple, cyan);
 .calendar{
     display: grid;
     margin: 5rem;
-    justify-content: center;
+    justify-content: flex;
     grid-template-rows: repeat(6,3rem);
     grid-template-columns: minmax(3rem, auto) repeat(6, 3rem);
+    float: left;
+    padding-left: 17vw;
 }
 
 .calendar > button{
@@ -149,6 +163,41 @@ background: linear-gradient(to left, purple, cyan);
 }
 #fourth{
     color: darkgrey;
+}
+
+.todayIs{
+    justify-content: flex;
+    display:flex;
+    width: 30%;
+    height: 400px;
+    border: solid;
+    border-width: .5rem;
+    border-color: white;
+    border-radius: 1rem;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.876);
+}
+
+.todayIs .text{
+    text-align:center;
+    font-size: 3vw;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 2rem;
+    color: white;
+    top: 50%;
+    left: 50%;
+    float:left;
+}
+
+.todayIs .dayDetails{
+    text-align:start;
+    font-size: 1vw;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 2rem;
+    color: white;
+    top: 50%;
+    left: 50%;
 }
 
 .reminders{
