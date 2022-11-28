@@ -1,0 +1,14 @@
+.doodleBox{
+    position:relative;
+    top: 50%;    
+    left:0;
+    right:0;
+    margin:5rem auto;
+    width: 70%;
+    height: 30rem;
+    background-color: rgba(0,0,0,.75);
+    border: solid;
+    border-width: 1rem;
+    border-color: white;
+    border-radius: 3rem;
+}

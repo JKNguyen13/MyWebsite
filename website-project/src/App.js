@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import { useReducer } from "react"
 import './styles.css';
 import Clock from "./components/Clock"
-
+import Doodle from './components/Doodle';
 
 const ACTIONS = {
   ADD_DIGIT: 'add-digit',
@@ -21,13 +21,15 @@ function reducer(state, {type, payload}){
 }
 
 const ownerName = ["Justin"]
+const greetings = ["Welcome, ","Hey, ", "What's up, ", "What's good, "]
+const greetingsFollowUp = ["What's in store for us today?", "What's waiting for us today?", "What will we do today?", "What do we need to do today?"]
 const dailyRecLink = ["https://www.youtube.com/watch?v=sBspSJWRT2E&ab_channel=QueenOfficial","https://www.youtube.com/watch?v=kTJczUoc26U&ab_channel=TheKidLAROIVEVO","https://www.youtube.com/watch?v=Tc0tLGWIqxA&ab_channel=PostMaloneVEVO","https://www.youtube.com/watch?v=Brm1ribq7WU&ab_channel=NIKI-Topic"]
 const randomGenre = [" Rock", " Pop", " Hip hop", " R&B"]
 const yes = ["'Don't look back.'", "'You are not a mistake.'", "'You are amazing.'", "'Follow your dreams'"]
 const randNum = Math.floor(Math.random() * 4)
 const texts = ["hi"]
 const specialDay = ["National Donut Day", "Valentine's Day", "National Bestfriend Day", "Christmas"]
-const dayDetails = ["Celebrated in the United States and in some other countries, National Donut Day is on the first Friday of June of each year, succeeding the doughnut event created by The Salvation Army in Chicago in 1938 to honor those of their members who served doughnuts to soldiers during World War I."]
+const dayDetails = ["Celebrated in the United States and in some other countries, National Donut Day is on the first Friday of June of each year, succeeding the doughnut event created by The Salvation Army in Chicago in 1938 to honor those of their members who served doughnuts to soldiers during World War I.", "It originated as a Christian feast day honoring one or two early Christian martyrs named Saint Valentine and, through later folk traditions, has become a significant cultural, religious, and commercial celebration of romance and love in many regions of the world.", "As most national days start, the US Congress declared there be a National Best Friends Day all the way back in 1935. It was chosen as June 8 since it's a relatively nice weather day everywhere in the country.", "Christmas is an annual festival commemorating the birth of Jesus Christ, observed primarily on December 25 as a religious and cultural celebration among billions of people around the world."]
 
 function App() {
 
@@ -44,8 +46,8 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
         </div>
         
-        <div className = "welcomeText">Welcome, {ownerName}!</div>
-        <div className="followUpText">What will we do today?</div>
+        <div className = "welcomeText">{greetings[randNum]}{ownerName}!</div>
+        <div className="followUpText">{greetingsFollowUp[randNum]}</div>
 
         <div class="reminders">REMINDERS:</div>
         <div className="goals">GOALS:</div>
@@ -75,6 +77,8 @@ function App() {
 
         </div>
 
+        <Doodle></Doodle>
+
         <div className="calculator-grid">
           <div className="output">
             <div className="previous-operand">{previousOperand} {operation} </div>
@@ -101,6 +105,8 @@ function App() {
 
         </div>
         
+        <Clock></Clock>
+
         <div className = "calendar">
           <div className ="dates">Sun Mon Tue Wed Thu Fri Sat</div>
           <button id="first">27</button>
@@ -140,20 +146,16 @@ function App() {
           <button>31</button>
         </div>
 
+        
+
         <div className="todayIs">
-          <div className="text">Today is {specialDay[randNum]}!</div>
-          <div className="dayDetails">{dayDetails[randNum]}</div>
+          <div className="text">Today is {specialDay[randNum]}!
+          <div className="dayDetails">{dayDetails[randNum]}</div></div>
         </div>
 
         <div className = "quotesBox">
         <div className = "quotes">{yes[randNum]}</div>
         </div>
-
-      
-          
-       
-
-       <Clock></Clock>
 
         <div className="weather">
           <img src="https://cdn-icons-png.flaticon.com/512/1555/1555512.png" className="weatherIcon"></img>

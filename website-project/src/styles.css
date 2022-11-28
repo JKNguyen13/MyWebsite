@@ -30,8 +30,7 @@ background: linear-gradient(to left, purple, cyan);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 2rem;
     color: white;
-    top: 50%;
-    left: 50%;
+    
 }
 
 .followUpText{
@@ -40,8 +39,7 @@ background: linear-gradient(to left, purple, cyan);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 2rem;
     color: white;
-    top: 50%;
-    left: 50%;
+    
 }
 
 .dailyRec{
@@ -65,8 +63,7 @@ background: linear-gradient(to left, purple, cyan);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 2rem;
     color: white;
-    top: 50%;
-    left: 50%;
+    
 }
 
 .calculator-grid{
@@ -145,8 +142,8 @@ background: linear-gradient(to left, purple, cyan);
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     padding: .75rem;
     word-wrap: break-word;
     word-break: break-all;
@@ -166,7 +163,7 @@ background: linear-gradient(to left, purple, cyan);
 }
 
 .todayIs{
-    justify-content: flex;
+    justify-content: center;
     display:flex;
     width: 30%;
     height: 400px;
@@ -185,19 +182,15 @@ background: linear-gradient(to left, purple, cyan);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 2rem;
     color: white;
-    top: 50%;
-    left: 50%;
-    float:left;
 }
 
-.todayIs .dayDetails{
-    text-align:start;
-    font-size: 1vw;
+.todayIs .text .dayDetails{
+    text-align:center;
+    font-size: 1.5vw;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 2rem;
+    margin: 1rem;
     color: white;
-    top: 50%;
-    left: 50%;
+    
 }
 
 .reminders{
