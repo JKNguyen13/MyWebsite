@@ -21,7 +21,7 @@
 
 body {
 margin: 0;
-background: linear-gradient(to left, purple, cyan);
+background: linear-gradient(to left, darkblue, cyan);
 }
 
 .welcomeText{
@@ -45,9 +45,8 @@ background: linear-gradient(to left, purple, cyan);
 .dailyRec{
     position:relative;
     top: 50%;    
-    left:0;
-    right:0;
-    margin:5rem auto;
+    margin-top: 5rem;
+    margin-left: 16vw;
     width: 70%;
     height: 10rem;
     background-color: rgba(0,0,0,.75);
@@ -55,11 +54,36 @@ background: linear-gradient(to left, purple, cyan);
     border-width: 1rem;
     border-color: white;
     border-radius: 3rem;
+    
 }
 
 .dailyRec .text{
     text-align: center;
     font-size: 3vw;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 2rem;
+    color: white;
+    
+}
+
+.dailyRecFollowUp{
+ 
+    position:relative;
+    top: 50%;    
+    margin-left: 26vw;
+    width: 50%;
+    height: 7.5rem;
+    background-color: rgba(0,0,0,.75);
+    border: solid;
+    border-width: 1rem;
+    border-color: white;
+    border-radius: 3rem;
+}
+
+.dailyRecFollowUp .text{
+    
+    text-align: center;
+    font-size: 1.5vw;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 2rem;
     color: white;
@@ -223,12 +247,22 @@ background: linear-gradient(to left, purple, cyan);
     margin-right: 2rem;
     margin-left: 1.75rem;
     padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.876);
+    background-color: black;
     float: left;
     range: 20rem;
     color: cyan;
     font-size: 2.5vw;
     resize: none;
+}
+
+.hi{
+    resize:none;
+    height: 5vw;
+    width: 22.5vw;
+    font-size: 1.5vw;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.876);
+    border: none;
 }
 
 .goals{

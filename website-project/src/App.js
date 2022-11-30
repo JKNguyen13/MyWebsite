@@ -4,6 +4,7 @@ import { useReducer } from "react"
 import './styles.css';
 import Clock from "./components/Clock"
 import Doodle from './components/Doodle';
+import DailyRec from "./components/DailyRec";
 
 const ACTIONS = {
   ADD_DIGIT: 'add-digit',
@@ -19,6 +20,12 @@ function reducer(state, {type, payload}){
     return state
   }
 }
+
+
+function clickHandler(){
+  alert("sorsssry")
+}
+        
 
 const ownerName = ["Justin"]
 const greetings = ["Welcome, ","Hey, ", "What's up, ", "What's good, "]
@@ -52,17 +59,19 @@ function App() {
         <div class="reminders">REMINDERS:</div>
         <div className="goals">GOALS:</div>
         <div className="custom" contenteditable="true">CUSTOM:</div>
-          
+
         <div className="reminders-box">
           <input type="checkbox" className="testC"></input>
           <label for="testC">
-            <textarea>hi</textarea>
+            <textarea className = "hi">hi</textarea>
           </label>
         </div> 
         
         <textarea className="goals-box"></textarea>
         <textarea className="custom-box"></textarea>
         
+        <DailyRec></DailyRec>
+
         <div className = "dailyRec">
           <div className= "text">Today's Recommendation: 
             <a
@@ -75,6 +84,13 @@ function App() {
             </a>
           </div>
 
+        </div>
+
+        <div className="dailyRecFollowUp">
+          <div className="text">Did you enjoy this recommendation?
+            <button>Yes</button>
+            <button>No</button>
+          </div>
         </div>
 
         <Doodle></Doodle>
@@ -101,7 +117,9 @@ function App() {
           <button>-</button>
           <button>.</button>
           <button>0</button>
-          <button className="span-two">=</button>
+          <button type="button" className="span-two">=</button>
+
+        
 
         </div>
         

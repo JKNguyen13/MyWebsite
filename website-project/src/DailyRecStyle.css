@@ -1,0 +1,47 @@
+.dailyRec{
+    position:relative;
+    top: 50%;    
+    margin-top: 5rem;
+    margin-left: 16vw;
+    width: 70%;
+    height: 10rem;
+    background-color: rgba(0,0,0,.75);
+    border: solid;
+    border-width: 1rem;
+    border-color: white;
+    border-radius: 3rem;
+    
+}
+
+.dailyRec .text{
+    text-align: center;
+    font-size: 3vw;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 2rem;
+    color: white;
+    
+}
+
+.dailyRecFollowUp{
+ 
+    position:relative;
+    top: 50%;    
+    margin-left: 26vw;
+    width: 50%;
+    height: 7.5rem;
+    background-color: rgba(0,0,0,.75);
+    border: solid;
+    border-width: 1rem;
+    border-color: white;
+    border-radius: 3rem;
+}
+
+.dailyRecFollowUp .text{
+    
+    text-align: center;
+    font-size: 1.5vw;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 2rem;
+    color: white;
+    
+}
