@@ -1,10 +1,21 @@
 import React from "react";
+import './DailyRecStyle.css';
+
+
+ function Yes(){
+    alert("Cool!");
+ }
+
+ function No(){
+    alert("Maybe you'll like the one tomorrow!");
+}
 
 
 function DailyRec(){
     const dailyRecLink = ["https://www.youtube.com/watch?v=sBspSJWRT2E&ab_channel=QueenOfficial","https://www.youtube.com/watch?v=kTJczUoc26U&ab_channel=TheKidLAROIVEVO","https://www.youtube.com/watch?v=Tc0tLGWIqxA&ab_channel=PostMaloneVEVO","https://www.youtube.com/watch?v=Brm1ribq7WU&ab_channel=NIKI-Topic"]
     const randomGenre = [" Rock", " Pop", " Hip hop", " R&B"]
     const randNum = Math.floor(Math.random() * 4)
+    
 
 return(
     <><div className="dailyRec">
@@ -21,11 +32,11 @@ return(
 
     </div><div className="dailyRecFollowUp">
             <div className="text">Did you enjoy this recommendation?
-                <button>Yes</button>
-                <button>No</button>
+                <button onclick="Yes">Yes</button>
+                <button onclick="No">No</button>
             </div>
         </div></>
 );
 }
 
-export default DailyRec
+export {DailyRec, Yes, No}

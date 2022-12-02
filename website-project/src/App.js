@@ -4,34 +4,13 @@ import { useReducer } from "react"
 import './styles.css';
 import Clock from "./components/Clock"
 import Doodle from './components/Doodle';
-import DailyRec from "./components/DailyRec";
-
-const ACTIONS = {
-  ADD_DIGIT: 'add-digit',
-  CHOOSE_OPERATION: 'choose-operation',
-  CLEAR: 'clear',
-  DELETE_DIGIT: 'delete-digit',
-  EVALUATE: 'evaluate'
-}
-
-function reducer(state, {type, payload}){
-  switch(type){
-    case ACTIONS.ADD_DIGIT:
-    return state
-  }
-}
-
-
-function clickHandler(){
-  alert("sorsssry")
-}
+import {DailyRec, Yes, No} from "./components/DailyRec";
+import Calculator from './components/Calculator';
         
 
 const ownerName = ["Justin"]
 const greetings = ["Welcome, ","Hey, ", "What's up, ", "What's good, "]
 const greetingsFollowUp = ["What's in store for us today?", "What's waiting for us today?", "What will we do today?", "What do we need to do today?"]
-const dailyRecLink = ["https://www.youtube.com/watch?v=sBspSJWRT2E&ab_channel=QueenOfficial","https://www.youtube.com/watch?v=kTJczUoc26U&ab_channel=TheKidLAROIVEVO","https://www.youtube.com/watch?v=Tc0tLGWIqxA&ab_channel=PostMaloneVEVO","https://www.youtube.com/watch?v=Brm1ribq7WU&ab_channel=NIKI-Topic"]
-const randomGenre = [" Rock", " Pop", " Hip hop", " R&B"]
 const yes = ["'Don't look back.'", "'You are not a mistake.'", "'You are amazing.'", "'Follow your dreams'"]
 const randNum = Math.floor(Math.random() * 4)
 const texts = ["hi"]
@@ -40,7 +19,7 @@ const dayDetails = ["Celebrated in the United States and in some other countries
 
 function App() {
 
-  const [{currentOperand, previousOperand, operation}, dispatch] = useReducer(reducer,{})
+  
 
   return (
 
@@ -71,57 +50,12 @@ function App() {
         <textarea className="custom-box"></textarea>
         
         <DailyRec></DailyRec>
-
-        <div className = "dailyRec">
-          <div className= "text">Today's Recommendation: 
-            <a
-            className=""
-            href={dailyRecLink[randNum]}
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-              {randomGenre[randNum]}
-            </a>
-          </div>
-
-        </div>
-
-        <div className="dailyRecFollowUp">
-          <div className="text">Did you enjoy this recommendation?
-            <button>Yes</button>
-            <button>No</button>
-          </div>
-        </div>
+        <Yes />
+        <No />
 
         <Doodle></Doodle>
 
-        <div className="calculator-grid">
-          <div className="output">
-            <div className="previous-operand">{previousOperand} {operation} </div>
-            <div className="current-operand">{currentOperand}</div>
-          </div>
-          <button className="span-two>">AC</button>
-          <button>DEL</button>
-          <button>/</button>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>*</button>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button>+</button>
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button>-</button>
-          <button>.</button>
-          <button>0</button>
-          <button type="button" className="span-two">=</button>
-
-        
-
-        </div>
+        <Calculator></Calculator>
         
         <Clock></Clock>
 
