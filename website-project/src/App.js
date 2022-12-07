@@ -4,7 +4,7 @@ import { useReducer } from "react"
 import './styles.css';
 import Clock from "./components/Clock"
 import Doodle from './components/Doodle';
-import {DailyRec, Yes, No} from "./components/DailyRec";
+import DailyRec from "./components/DailyRec";
 import Calculator from './components/Calculator';
         
 
