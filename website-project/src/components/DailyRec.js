@@ -20,6 +20,7 @@ Boolean(hi);
     }*/
     
 }
+document.body.onload = secondRound;
 
 function secondRound(){
     const newDiv = document.createElement("div");
@@ -27,7 +28,7 @@ function secondRound(){
     const newContent = document.createTextNode("Test Test");
     newDiv.appendChild(newContent);
 
-    const currentDiv = document.getElementById("");
+    const currentDiv = document.getElementById("dailyRecFollow");
     document.body.insertBefore(newDiv, currentDiv);
     return(
  
@@ -58,13 +59,14 @@ return(
                 {randomGenre[randNum]}
             </a>
         </div>
-
-    </div><div className="dailyRecFollowUp" id="dailyRecFollowUp">
-            <div className="text">Did you enjoy this recommendation?
-                <button onClick={secondRound}>Yes {upVotes}</button>
-                <button onClick={No}>No</button>
-            </div>
-        </div></>
+    </div>
+    <div className="dailyRecFollowUp" id="dailyRecFollow">
+        <div className="text">Did you enjoy this recommendation?
+            <button onClick={secondRound}>Yes {upVotes}</button>
+            <button onClick={No}>No</button>
+        </div>
+    </div>
+    </>
 
         
 );

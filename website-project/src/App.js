@@ -26,9 +26,9 @@ function App() {
 
 
     
-    <div className="App">
+    <div className="App" id="temp">
       
-      <header className="App-header">
+      <header className="App-header" id="temp2">
         <div className="NavBar">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
@@ -52,7 +52,7 @@ function App() {
         <textarea className="goals-box"></textarea>
         <textarea className="custom-box"></textarea>
         
-        <DailyRec></DailyRec>
+        <DailyRec id="DailyRec"></DailyRec>
         
 
         <Doodle></Doodle>
