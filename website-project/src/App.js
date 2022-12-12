@@ -18,6 +18,17 @@ const specialDay = ["National Donut Day", "Valentine's Day", "National Bestfrien
 const dayDetails = ["Celebrated in the United States and in some other countries, National Donut Day is on the first Friday of June of each year, succeeding the doughnut event created by The Salvation Army in Chicago in 1938 to honor those of their members who served doughnuts to soldiers during World War I.", "It originated as a Christian feast day honoring one or two early Christian martyrs named Saint Valentine and, through later folk traditions, has become a significant cultural, religious, and commercial celebration of romance and love in many regions of the world.", "As most national days start, the US Congress declared there be a National Best Friends Day all the way back in 1935. It was chosen as June 8 since it's a relatively nice weather day everywhere in the country.", "Christmas is an annual festival commemorating the birth of Jesus Christ, observed primarily on December 25 as a religious and cultural celebration among billions of people around the world."]
 const permNumb = 1;
 
+function addNew(){
+  alert("Hi");
+  const newDiv = document.createElement("div");
+    newDiv.classList.add("box")
+    const newContent = document.createTextNode("text");
+    newDiv.appendChild(newContent);
+
+    const currentDiv = document.getElementById("hi");
+    document.body.insertBefore(newDiv, currentDiv);
+}
+
 function App() {
 
   
@@ -43,6 +54,7 @@ function App() {
         <div className="custom" contenteditable="true">CUSTOM:</div>
 
         <div className="reminders-box">
+          <button className="reminderButton" onClick={addNew}>Hi</button>
           <input type="checkbox" className="testC"></input>
           <label for="testC">
             <textarea className = "hi">hi</textarea>

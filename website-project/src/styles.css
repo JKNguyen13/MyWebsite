@@ -160,6 +160,17 @@ background: linear-gradient(to left, darkblue, cyan);
     resize: none;
 }
 
+.reminderButton{
+
+    height: 5vw;
+    width: 22.5vw;
+    font-size: 1.5vw;
+    color:white;
+    background-color: green;
+    border: none;
+    float:left;
+}
+
 .hi{
     resize:none;
     height: 5vw;
