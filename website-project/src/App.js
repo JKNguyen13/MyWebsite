@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 //import './App.css';
-import { useReducer } from "react"
+import {useState, useReducer } from "react"
 import './styles.css';
 import Clock from "./components/Clock"
 import Doodle from './components/Doodle';
@@ -29,6 +29,9 @@ function addNew(){
     document.body.insertBefore(newDiv, currentDiv);
 }
 
+
+
+
 function App() {
 
   
@@ -48,6 +51,8 @@ function App() {
 
         <div className = "welcomeText">{greetings[randNum]}{ownerName}!</div>
         <div className="followUpText">{greetingsFollowUp[randNum]}</div>
+
+        
 
         <div class="reminders">REMINDERS:</div>
         <div className="goals">GOALS:</div>

@@ -35,7 +35,7 @@ function secondRound(){
     const newContent = document.createTextNode("text");
     newDiv.appendChild(newContent);
 
-    const currentDiv = document.getElementById("");
+    const currentDiv = document.getElementsByClassName("dailyParent");
     document.body.insertBefore(newDiv, currentDiv);
     return(
  
@@ -72,10 +72,12 @@ return(
             </a>
         </div>
     </div>
-            <div className="dailyRecFollowUp" id="dailyRecFollow">
-                <div className="text">Did you enjoy this recommendation?
-                    <button onClick={secondRound}>Yes </button>
-                    <button onClick={No}>No</button>
+            <div className="dailyParent">
+                <div className="dailyRecFollowUp" id="dailyRecFollow">
+                    <div className="text">Did you enjoy this recommendation?
+                        <button onClick={secondRound}>Yes </button>
+                        <button onClick={No}>No</button>
+                    </div>
                 </div>
             </div>
         </></>
