@@ -2,6 +2,21 @@
     box-sizing: border-box;
 }
 
+.hope{
+    text-align: center;
+    font-family: sans-serif;
+   
+}
+
+.textBox{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.05vw;
+    background-color: black;
+    color:white;
+    border: none;
+}
+
 .NavBar{
     justify-content: left; /* Put's everything that's in the div (the image) in the center of the parent*/
     display: flex;

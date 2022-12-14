@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 //import './App.css';
-import {useState, useReducer } from "react"
+import {useState, useReducer, useCallback, useEffect } from "react"
 import './styles.css';
 import Clock from "./components/Clock"
 import Doodle from './components/Doodle';
@@ -29,57 +29,79 @@ function addNew(){
     document.body.insertBefore(newDiv, currentDiv);
 }
 
+const Item = ({id, removeDiv}) => {
+  const clickHandler = useCallback(() => {
+    removeDiv(id);
+  }, [id, removeDiv]);
 
+  return(
+    <div>
+      <input type="checkbox"/>
+      <input type="text" className="textBox"/>
+      <button onClick={clickHandler}>Remove</button>
+    </div>
+  );
+};
 
 
 function App() {
 
+  const [items, setItems] = useState([]);
+  
+  const addDiv = useCallback(() => {
+    setItems([...items, new Date().getTime()]);
+  }, [items]);
+
+  const removeDiv = useCallback((itemId) => {
+    setItems(items.filter((id) => id !== itemId));
+  }, [items]);
   
 
   return (
 
-
     
-    <div className="App" id="temp">
-      
+    
+      <div className="App" id="temp">
+
       <header className="App-header" id="temp2">
         <div className="NavBar">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
-        
+
         <permNumb></permNumb>
 
-        <div className = "welcomeText">{greetings[randNum]}{ownerName}!</div>
+        <div className="welcomeText">{greetings[randNum]}{ownerName}!</div>
         <div className="followUpText">{greetingsFollowUp[randNum]}</div>
 
-        
+
 
         <div class="reminders">REMINDERS:</div>
         <div className="goals">GOALS:</div>
         <div className="custom" contenteditable="true">CUSTOM:</div>
 
         <div className="reminders-box">
-          <button className="reminderButton" onClick={addNew}>Hi</button>
-          <input type="checkbox" className="testC"></input>
-          <label for="testC">
-            <textarea className = "hi">hi</textarea>
-          </label>
-        </div> 
-        
+            <div className="hope">
+                {items.map((id) => (
+                <Item key={id} id={id} removeDiv={removeDiv}/>
+                ))}
+                <button onClick={addDiv}>Add</button>
+            </div>
+        </div>
+
         <textarea className="goals-box"></textarea>
         <textarea className="custom-box"></textarea>
-        
+
         <DailyRec id="DailyRec"></DailyRec>
-        
+
 
         <Doodle></Doodle>
 
         <Calculator></Calculator>
-        
+
         <Clock></Clock>
 
-        <div className = "calendar">
-          <div className ="dates">Sun Mon Tue Wed Thu Fri Sat</div>
+        <div className="calendar">
+          <div className="dates">Sun Mon Tue Wed Thu Fri Sat</div>
           <button id="first">27</button>
           <button id="second">28</button>
           <button id="third">29</button>
@@ -117,28 +139,28 @@ function App() {
           <button>31</button>
         </div>
 
-        
+
 
         <div className="todayIs">
           <div className="text">Today is {specialDay[randNum]}!
-          <div className="dayDetails">{dayDetails[randNum]}</div></div>
+            <div className="dayDetails">{dayDetails[randNum]}</div></div>
         </div>
 
-        <div className = "quotesBox">
-        <div className = "quotes">{yes[randNum]}</div>
+        <div className="quotesBox">
+          <div className="quotes">{yes[randNum]}</div>
         </div>
 
         <div className="weather">
           <img src="https://cdn-icons-png.flaticon.com/512/1555/1555512.png" className="weatherIcon"></img>
           <div className="text">
-              Sunday
-        
+            Sunday
+
           </div>
         </div>
         <div className="weatherClick">
-          <img src="https://www.transparentpng.com/thumb/arrow/right-black-arrow-icon-png-29.png"className="text"></img>
+          <img src="https://www.transparentpng.com/thumb/arrow/right-black-arrow-icon-png-29.png" className="text"></img>
         </div>
-        
+
       </header>
     </div>
   );
