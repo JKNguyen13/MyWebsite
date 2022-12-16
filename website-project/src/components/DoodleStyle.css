@@ -1,4 +1,9 @@
 .doodleBox{
+    /*width: 600px;
+  height: 600px;
+  background-color: lightgrey;
+  border: 2px solid greenyellow;
+  margin: -8% 23%;*/
     position:relative;
     top: 50%;    
     left:0;

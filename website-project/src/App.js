@@ -11,7 +11,7 @@ import Calculator from './components/Calculator';
 const ownerName = ["Justin"]
 const greetings = ["Welcome, ","Hey, ", "What's up, ", "What's good, "]
 const greetingsFollowUp = ["What's in store for us today?", "What's waiting for us today?", "What will we do today?", "What do we need to do today?"]
-const yes = ["'Don't look back.'", "'You are not a mistake.'", "'You are amazing.'", "'Follow your dreams'"]
+const yes = ["Don't look back.", "You are not a mistake.", "You are amazing.", "Follow your dreams"]
 const randNum = Math.floor(Math.random() * 4)
 const texts = ["hi"]
 const specialDay = ["National Donut Day", "Valentine's Day", "National Bestfriend Day", "Christmas"]
