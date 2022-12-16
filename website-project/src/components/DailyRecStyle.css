@@ -17,9 +17,13 @@
     text-align: center;
     font-size: 3vw;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 2rem;
+    margin: .7rem;
     color: white;
     
+}
+
+.songLink{
+    color:cyan;
 }
 
 .dailyRecFollowUp{
@@ -44,6 +48,12 @@
     margin: 2rem;
     color: white;
     
+}
+
+.hope{
+    text-align: center;
+    font-family: sans-serif;
+   
 }
 
 .box{

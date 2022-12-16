@@ -155,7 +155,7 @@ background: linear-gradient(to left, darkblue, cyan);
 }
 
 .reminders-box{
-    justify-content: left;
+    justify-content: center;
     display: flex;
     width: 30%;
     height: 400px;
@@ -213,7 +213,7 @@ background: linear-gradient(to left, darkblue, cyan);
 }
 
 .goals-box{
-    justify-content: left;
+    justify-content: center;
     display: flex;
     width: 30%;
     height: 400px;
@@ -247,7 +247,7 @@ background: linear-gradient(to left, darkblue, cyan);
 }
 
 .custom-box{
-    justify-content: left;
+    justify-content: center;
     display: flex;
     width: 30%;
     height: 400px;
